@@ -1,0 +1,52 @@
+/* Set the container to fill the full viewport */
+.container {
+ 
+ 
+  position: relative; /* Needed for absolute positioning inside */
+  overflow: hidden; /* Prevents scrolling */
+}
+
+/* Center the image and text container */
+.image {
+  position: relative; /* Allows positioning of text */
+  width: 100%;
+  height: 100%;
+}
+
+/* Make the image fill the container */
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintains aspect ratio while filling the container */
+}
+
+/* Style and center the text */
+.image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Text color */
+  text-align: center;
+  font-size: 3em; /* Default text size */
+  padding: 0 10px; /* Adds padding to ensure text doesn't touch the edges */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .image h1 {
+    font-size: 2.5em; /* Adjusts text size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .image h1 {
+    font-size: 2em; /* Further adjusts text size for tablet screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image h1 {
+    font-size: 1.5em; /* Adjusts text size for smaller mobile screens */
+  }
+}

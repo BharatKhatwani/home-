@@ -1,0 +1,63 @@
+.footer {
+  background-color: #4B286D;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 1525px;  /* Make sure the footer takes the full width of the viewport */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.footer-description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.footer-button {
+  background-color: #9888A5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer-button:hover {
+  background-color: #7D6297;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-socials a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
